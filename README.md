@@ -14,7 +14,7 @@ Extracts a series of frames from the video contained in 'clip.mp4' and saves
 them as jpeg images in sequentially numbered files with the pattern
 'frame_xxxx.jpg'.
 
-### ConvertToGrayscal.py
+### ConvertToGrayscale.py
 Loads a series for frams from sequentially numbered files with the pattern
 'frame_xxxx.jpg', converts the grames to grayscale, and saves them as jpeg
 images with the file names 'grayscale_xxxx.jpg'
@@ -28,7 +28,7 @@ Loads a series of framss from a video contained in 'clip.mp4' and displays
 them with a 42ms delay
 
 ## Requirements
-* Exctract frames from a video file, convert them to grayscale, and display
+* Extract frames from a video file, convert them to grayscale, and display
 them in sequence
 * You must have three functions
   * One function to extract the frames
@@ -36,13 +36,13 @@ them in sequence
   * One function to display the frames at the original framerate (24fps)
 * The functions must each execute within their own python thread
   * The threads will execute concurrently
-  * The order may not be the same from run to run
-* Threads will need to signal that they are complete with their task
+  * The order threads execute in may not be the same from run to run
+* Threads will need to signal that they have completed their task
 * Threads must process all frames of the video exactly once
 * Frames will be communicated between threads using producer/consumer idioms
   * Producer/consumer quesues will be bounded at ten frames
 
-
+Note: You may have ancillary objects and method in order to make you're code easer to understand and implement.
 
 
 
