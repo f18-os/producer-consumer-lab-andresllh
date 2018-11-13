@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
 import cv2
-
+import os
 # globals
 outputDir    = 'frames'
-
+clipFileName = 'clip.mp4'
 # initialize frame count
 count = 0
 
