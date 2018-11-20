@@ -27,6 +27,10 @@ Loads a series of frames sequently from files with the names
 Loads a series of framss from a video contained in 'clip.mp4' and displays 
 them with a 42ms delay
 
+### Producer-Consumer.py - Andres Llausas
+Implements a modified version of ExtractAndDisplay.py with ConvertToGrayscale.py. It utilizes the same methods as these modules, but
+uses producer/consumer idioms and threads to extract, convert to grayscale, and play the video. This file can be run by simply executing the python file and making sure that the clip provided in this repository is in the same folder. 
+
 ## Requirements
 * Extract frames from a video file, convert them to grayscale, and display
 them in sequence
